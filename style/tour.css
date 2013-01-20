@@ -147,8 +147,18 @@ Also, we animated the width from 0 to full, so that a top-background image can a
 
 /*********************** A R T I C L E   I M A G E S ***************************/
 
+body {
+	overflow-x: hidden;
+}
+
 .tour .showing > section > img:last-child {
-	margin-left: 2.5em;
+	-webkit-transition: left 0.3s ease 0.6s;
+	left: 2.5em;
+}
+
+.tour section > img:last-child {
+	left: 100em;
+	position: relative;
 }
 
 /********************** H E A D L I N E   H I G H L I G H T   E F F E C T *******************
