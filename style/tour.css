@@ -21,6 +21,12 @@ article:last-child {margin-bottom: 6em;} /* to render footer correctly in no-tou
 	text-align: center;
 }
 
+/********************************** P U R E   V E R S I O N  ***********************************
+When visiting index.html?pure, a "pure" html doc is shown. No .tour class is applied to body
+*/
+footer a {display:none;}
+.tour footer a {display:inline;}
+
 /*************************** L O G O   A N D   H E A D E R **************************************/
 
 h1 {
@@ -59,27 +65,27 @@ body > section {
 	top: 5em;
 }
 
-.tour .a1.hiding {left: 0; top: 0; -webkit-transition-property: top, left; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;}
-.tour .a2.hiding {left: 0; top: 2em; -webkit-transition-property: top, left; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;}
-.tour .a3.hiding {left: 0; top: 4em; -webkit-transition-property: top, left; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;}
-.tour .a4.hiding {left: 0; top: 6em; -webkit-transition-property: top, left; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;}
-.tour .a5.hiding {left: 0; top: 8em; -webkit-transition-property: top, left; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;}
-.tour .a6.hiding {left: 0; top: 10em; -webkit-transition-property: top, left; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;}
-.tour .a7.hiding {left: 0; top: 12em; -webkit-transition-property: top, left; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;}
-.tour .a8.hiding {left: 0; top: 14em; -webkit-transition-property: top, left; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;}
+.tour .hiding:nth-child(1) {left: 0; top: 0; -webkit-transition-property: top, left; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;}
+.tour .hiding:nth-child(2) {left: 0; top: 2em; -webkit-transition-property: top, left; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;}
+.tour .hiding:nth-child(3) {left: 0; top: 4em; -webkit-transition-property: top, left; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;}
+.tour .hiding:nth-child(4) {left: 0; top: 6em; -webkit-transition-property: top, left; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;}
+.tour .hiding:nth-child(5) {left: 0; top: 8em; -webkit-transition-property: top, left; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;}
+.tour .hiding:nth-child(6) {left: 0; top: 10em; -webkit-transition-property: top, left; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;}
+.tour .hiding:nth-child(7) {left: 0; top: 12em; -webkit-transition-property: top, left; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;}
+.tour .hiding:nth-child(8) {left: 0; top: 14em; -webkit-transition-property: top, left; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease;}
 
-.tour .a1 {left: 0; top: 0;}
-.tour .a2 {left: 0; top: 2em;}
-.tour .a3 {left: 0; top: 4em;}
-.tour .a4 {left: 0; top: 6em;}
-.tour .a5 {left: 0; top: 8em;}
-.tour .a6 {left: 0; top: 10em;}
-.tour .a7 {left: 0; top: 12em;}
-.tour .a8 {left: 0; top: 14em;}
+.tour article:nth-child(1) {left: 0; top: 0;}
+.tour article:nth-child(2) {left: 0; top: 2em;}
+.tour article:nth-child(3) {left: 0; top: 4em;}
+.tour article:nth-child(4) {left: 0; top: 6em;}
+.tour article:nth-child(5) {left: 0; top: 8em;}
+.tour article:nth-child(6) {left: 0; top: 10em;}
+.tour article:nth-child(7) {left: 0; top: 12em;}
+.tour article:nth-child(8) {left: 0; top: 14em;}
 
 
 
-.tour .showing {
+.tour article.showing {
 	-webkit-transition-property: top, left; -webkit-transition-duration: 0.25s; -webkit-transition-timing-function: ease;
 	top: -2em;
 	left: 390px;
@@ -176,3 +182,4 @@ h2:after { /* to prevent headline height change during highlight effect */
 	font-size: 2em;
 	color: #777; /* #333 testing without the color anim, looks better? */
 }
+

@@ -1,4 +1,4 @@
-$("body").addClass("tour");
+if (window.location.search!=="?pure") {$("body").addClass("tour");}
 
 $("article").on("click",function(){
 	$el = $(this);
