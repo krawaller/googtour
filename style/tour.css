@@ -88,7 +88,7 @@ body > section {
 .tour article.showing {
 	-webkit-transition-property: top, left; -webkit-transition-duration: 0.25s; -webkit-transition-timing-function: ease;
 	top: -2em;
-	left: 390px;
+	left: 370px;
 }
 
 .tour h2 {
