@@ -21,6 +21,10 @@ article:last-child {margin-bottom: 6em;} /* to render footer correctly in no-tou
 	text-align: center;
 }
 
+.tour article > section {
+	padding-top: 1em;
+}
+
 /********************************** P U R E   V E R S I O N  ***********************************
 When visiting index.html?pure, a "pure" html doc is shown. No .tour class is applied to body
 */
@@ -159,6 +163,7 @@ body {
 .tour section > img:last-child {
 	left: 100em;
 	position: relative;
+	padding-top: 1em;
 }
 
 /********************** H E A D L I N E   H I G H L I G H T   E F F E C T *******************
